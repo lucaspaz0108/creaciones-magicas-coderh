@@ -1,0 +1,182 @@
+.card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 15px 18px 14px;
+    cursor: pointer;
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+            }
+}
+
+h1{
+    font-size: 2.5rem;
+}
+#banner{
+    margin: 2rem;
+}
+
+.span_ofertas{
+    font-size: 2rem;
+}
+
+.card_margin{
+    margin-top: 4rem;
+}
+.card_size{
+    width: 100%;
+    height: 45vw;
+    object-fit: cover;
+}
+.button{
+    background-color: pink;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+#logo_size{
+    height: 14rem;
+    width: auto;
+}
+
+.kits_style{
+    text-align: center;
+        color: mix(#fff, #e91e63, 85%);
+        font-size: 4rem;  
+        font-weight: 900;
+        text-shadow: 
+            -0.0075em 0.0075em 0 mix(#fff, #e91e63, 94%),
+            0.005em 0.005em 0 mix(#fff, #e91e63, 60%),
+            0.01em 0.01em 0 mix(#fff, #e91e63, 62%), 
+            0.015em 0.015em mix(#fff, #e91e63, 64%), 
+            0.02em 0.02em 0 mix(#fff, #e91e63, 66%), 
+            0.025em 0.025em 0 mix(#fff, #e91e63, 68%),
+            0.03em 0.03em 0 mix(#fff, #e91e63, 70%),
+            0.035em 0.035em 0 mix(#fff, #e91e63, 72%);
+}
+
+.kits_tutoriales {
+    @extend .kits_style;
+    font-size: 3rem;
+}
+
+.kits_p{
+    font-size: 1.6rem;
+    margin: 2rem 1rem 1rem 1rem;
+}
+
+.cursos_font{
+    font-family: Roxie;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #f25c93;
+    text-align: center;
+    margin: 3rem 1rem 2rem 1rem
+}
+
+.cursos_p{
+    font-size: 1.5rem;
+    color: #f25c93;
+    margin: 1rem;
+}
+
+.btn-card{
+    background-color:#e91e63;
+    margin-top: 7.5rem;
+    &:hover{
+        color:white
+    }
+}
+.card-border{
+    border: 1px solid #f25c93;
+    border-radius: 4%;
+}
+
+.banner-border{
+    @extend .card-border;
+        border-width: 5px;
+}
+
+.card-font{
+    font-family: $font-family;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.banner_proximamente{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.banner-text{
+    font-family: $font-family
+}
+
+.card-text{
+    @extend .card-font;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+@media (max-width:576px) {
+    .card-text{font-size: 1rem;}
+    h1{font-size: 1.2rem,}
+    .span_ofertas{font-size: 1.2rem;}
+    .cursos_p{font-size: 1rem;}
+}
+
+@media (max-width:576px) {
+    .card-title{font-size: 1.5rem;}
+}
+
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+
+.boton_default{
+    width: 5rem;
+    text-align: center;
+    padding: 0.4rem 0;
+    margin: 0.5rem auto;
+    border-radius: 0.7rem;
+    color: white;
+}
+
+.boton_success {
+    @extend .boton_default ;
+    background-color: rgb(4, 212, 4)
+}
+
+.boton_alerta {
+    @extend .boton_default ;
+    background-color: #FF8516;
+}
+
+.boton_cancelar {
+    @extend .boton_default ;
+    background-color: #D61E20;
+}
+
+@media (max-width:768px) {
+    .kits_style{font-size: 1.5rem};
+    .kits_tutoriales{font-size: 1.4rem};
+    .kits_p{font-size: 0.9rem;}
+}
+

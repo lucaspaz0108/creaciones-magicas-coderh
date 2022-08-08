@@ -1,0 +1,29 @@
+//paleta de colores
+$main-color:rgb(247, 204, 247);
+$secondary-color:#EA7CEA;
+$third-color: #663666;
+
+//fuente
+$font-family: 'Montserrat', sans-serif;
+
+$background-color: $main-color;
+$nav-link-hover-color: $secondary-color;
+
+//mapa
+$colores: (
+    "primary": $main-color,
+    "secondary-color": $secondary-color,
+    "third-color": $third-color,
+    "send-email": #E6BEE6,
+    "error":#BE3D9E,
+    "hover": #FCC5D3,
+);
+
+@mixin font($fuente, $font_size) {
+    font-family: $fuente;
+    font-size: $font_size;
+}
+
+h1 {
+    @include font('Montserrat', 2rem);
+}
