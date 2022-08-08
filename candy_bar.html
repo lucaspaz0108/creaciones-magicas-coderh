@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="El candy bar de Creaciones Mágicas tiene la seleccion de productos más amplia, ingresa a la pagina para verlos">
     <meta name="keywords"  content="candy_bar, golosinas, decoracion,cumpleaños,invitaciones, kits_imprimibles, eventos">
+    <link rel="shortcut icon" href="./img/favicon-32x32.png">
     <title>Candy Bar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
@@ -20,15 +21,15 @@
 <body>
     <header>
         <div class="container-fluid">
-                <div>
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="./index.html">
-                            <img id="logo" src="./img/logo.png" alt="logo">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img id="logo" src="./img/logo.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link menu__link" href="./index.html">Inicio</a>
@@ -47,98 +48,101 @@
                             </li>
                         </ul>
                     </div>
-                    </nav>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+     <!-- carrusel -->
+        <div id="demo" class="carousel slide d-none d-md-flex" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/BANNER CANDY BAR1_1.svg" alt="banner promociones">
                 </div>
-        </header>
-    </div>
+                <div class="carousel-item">
+                    <img src="./img/BANNER CANDY BAR2.svg" alt="banner promocion tripticos">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/BANNER CANDY BAR3.svg" alt="banner promocion souvenirs">
+                </div>
+            </div>  
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+             </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+             </a>
+        </div>
 
-<main>
-    <!-- carrusel -->
-<div id="demo" class="carousel slide d-none d-md-flex" data-ride="carousel">
-    <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="./img/BANNER CANDY BAR1_1.svg" alt="banner promociones">
+        <div class="containter-fluid justify-content-center text-center my-2">
+            <span class="span_ofertas">Nuestro catologo de productos</span>
         </div>
-        <div class="carousel-item">
-                <img src="./img/BANNER CANDY BAR2.svg" alt="banner promocion tripticos">
-        </div>
-        <div class="carousel-item">
-            <img src="./img/BANNER CANDY BAR3.svg" alt="banner promocion souvenirs">
-        </div>
-    </div>  
-     <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </a>
-</div>
 
- <span class="span_ofertas" >Nuestro catologo de productos</span>
+        <!-- Productos -->
 
-    <div class="container-fluid d-flex  flex-md-row justify-content-center flex-wrap">
-        <div class="card col-8 col-md-3 m-4">
-            <img class="card-img-top" src="./img/post-toy-story-11-011-6d639fabc57a1f1ff415610536115204-640-0.jpg" alt="Card image" style="width:100%">
-        <div class="card-body">
-            <h4 class="card-title">Album de figuritas</h4>
-            <p class="card-text">Lanzamiento album de figuritas personalizados de la tematica que elijas</p>
-            <a href="#" class="btn btn-primary button">10 x $1500</a>
-        </div>
-        </div>
+        <div class="container-fluid d-flex  flex-md-row justify-content-center flex-wrap">
+            <div class="card col-8 col-md-3 m-4">
+                <img class="card-img-top" src="./img/post-toy-story-11-011-6d639fabc57a1f1ff415610536115204-640-0.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Album de figuritas</h4>
+                    <p class="card-text">Lanzamiento album de figuritas personalizados de la tematica que elijas</p>
+                    <a href="#" class="btn btn-primary button">10 x $1500</a>
+                </div>
+            </div>
 
             <div class="card col-8 col-md-3 m-4">
                 <img class="card-img-top" src="./img/post-osito-nordico-celeste-031-44a71798d244e01b9d15530972187374-640-0.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-                <h4 class="card-title">Porta cupcakes</h4>
-                <p class="card-text">Decoracion de cupcakes personalizados de la tematica que elijas</p>
-                <a href="#" class="btn btn-primary button">20 x $1200</a>
-            </div>
+                <div class="card-body">
+                    <h4 class="card-title">Porta cupcakes</h4>
+                    <p class="card-text">Decoracion de cupcakes personalizados de la tematica que elijas</p>
+                    <a href="#" class="btn btn-primary button">20 x $1200</a>
+                </div>
             </div>
 
             <div class="card col-8 col-md-3 m-4">
                 <img class="card-img-top" src="./img/post-osito-nordico-celeste-081-8be42eb1d91d905e5815530972207540-640-0.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-                <h4 class="card-title">Banderines</h4>
-                <p class="card-text">Banderines con nombre personalizadas de la tematica que elijas</p>
-                <a href="#" class="btn btn-primary button">1 x $800</a>
-            </div>
+                <div class="card-body">
+                    <h4 class="card-title">Banderines</h4>
+                    <p class="card-text">Banderines con nombre personalizadas de la tematica que elijas</p>
+                    <a href="#" class="btn btn-primary button">1 x $800</a>
+                </div>
             </div>
 
             <div class="card col-8 col-md-3 m-4">
                 <img class="card-img-top" src="./img/post-llama-party-141-7d312fb7b244762e3015602874380639-640-0.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-                <h4 class="card-title">Bolsitas</h4>
-                <p class="card-text">Bolsitas para golosinas  personalizados de la tematica que elijas</p>
-                <a href="#" class="btn btn-primary button">10 x $1500</a>
-            </div>
+                <div class="card-body">
+                    <h4 class="card-title">Bolsitas</h4>
+                    <p class="card-text">Bolsitas para golosinas  personalizados de la tematica que elijas</p>
+                    <a href="#" class="btn btn-primary button">10 x $1500</a>
+                </div>
             </div>
     
-                <div class="card col-8 col-md-3 m-4">
-                    <img class="card-img-top" src="./img/post-rosas-acuarela-glitter-04-011-a615a95e9171d0da9e15544061525454-640-0.jpg" alt="Card image" style="width:100%">
+            <div class="card col-8 col-md-3 m-4">
+                <img class="card-img-top" src="./img/post-rosas-acuarela-glitter-04-011-a615a95e9171d0da9e15544061525454-640-0.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h4 class="card-title">Invitaciones</h4>
                     <p class="card-text">Invitacion de cumpleaños personalizados de la tematica que elijas</p>
                     <a href="#" class="btn btn-primary button">15 x $600</a>
                 </div>
-                </div>
+            </div>
     
-                <div class="card col-8 col-md-3 m-4">
+            <div class="card col-8 col-md-3 m-4">
                     <img class="card-img-top" src="./img/post-llama-party-021-f51eaa55777ef32a1315582932182515-640-0.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">Cartel bienvenida</h4>
-                    <p class="card-text">Cartel de bienvenida de cumpleaños de la tematica que elijas</p>
-                    <a href="#" class="btn btn-primary button">1 x $800</a>
-                </div>
-                </div>
-
-
+                    <div class="card-body">
+                        <h4 class="card-title">Cartel bienvenida</h4>
+                        <p class="card-text">Cartel de bienvenida de cumpleaños de la tematica que elijas</p>
+                        <a href="#" class="btn btn-primary button">1 x $800</a>
+                    </div>
+            </div>
+        </div>    
     </main>
-
+<!-- footer -->
     <footer class="text-center text-white">
         <div class="container pt-4">
             <section class="mb-4">
@@ -162,6 +166,5 @@
         <div class="text-center text-dark p-3">
         © 2022 Copyright: Creaciones Mágicas
     </footer>
-
 </body>
 </html>

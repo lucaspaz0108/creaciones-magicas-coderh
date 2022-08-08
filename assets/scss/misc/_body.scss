@@ -1,3 +1,13 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    max-width: 100%;
+    min-height: 100vh;
+}
 .card{
     border-radius: 4px;
     background: #fff;
@@ -10,35 +20,74 @@
             box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
             }
 }
-
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.card-font{
+    font-family: $font-family;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.card-text{
+    @extend .card-font;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.card-border{
+    border: 1px solid #f25c93;
+    border-radius: 4%;
+}
+.btn-card{
+    background-color:#e91e63;
+    margin-top: 7.5rem;
+    &:hover{
+        color:white
+    }
+}
 h1{
     font-size: 2.5rem;
 }
+
+#h3_space{
+    margin-bottom: 5rem;
+}
+
 #banner{
     margin: 2rem;
+}
+.banner-border{
+    @extend .card-border;
+        border-width: 5px;
+}
+
+.banner_proximamente{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.banner-text{
+    font-family: $font-family
 }
 
 .span_ofertas{
     font-size: 2rem;
 }
 
-.card_margin{
-    margin-top: 4rem;
-}
-.card_size{
-    width: 100%;
-    height: 45vw;
-    object-fit: cover;
-}
 .button{
     background-color: pink;
     border: none;
     display: flex;
     justify-content: center;
 }
-#logo_size{
-    height: 14rem;
-    width: auto;
+.boton_default{
+    width: 5rem;
+    text-align: center;
+    padding: 0.4rem 0;
+    margin: 0.5rem auto;
+    border-radius: 0.7rem;
+    color: white;
 }
 
 .kits_style{
@@ -82,58 +131,6 @@ h1{
     margin: 1rem;
 }
 
-.btn-card{
-    background-color:#e91e63;
-    margin-top: 7.5rem;
-    &:hover{
-        color:white
-    }
-}
-.card-border{
-    border: 1px solid #f25c93;
-    border-radius: 4%;
-}
-
-.banner-border{
-    @extend .card-border;
-        border-width: 5px;
-}
-
-.card-font{
-    font-family: $font-family;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.banner_proximamente{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.banner-text{
-    font-family: $font-family
-}
-
-.card-text{
-    @extend .card-font;
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-
-
-@media (max-width:576px) {
-    .card-text{font-size: 1rem;}
-    h1{font-size: 1.2rem,}
-    .span_ofertas{font-size: 1.2rem;}
-    .cursos_p{font-size: 1rem;}
-}
-
-@media (max-width:576px) {
-    .card-title{font-size: 1.5rem;}
-}
-
-
 .iframe-container{
     position: relative;
     width: 100%;
@@ -148,30 +145,10 @@ h1{
     width: 70%;
     margin-right: 15%;
     margin-left: 15%;
-  }
-
-.boton_default{
-    width: 5rem;
-    text-align: center;
-    padding: 0.4rem 0;
-    margin: 0.5rem auto;
-    border-radius: 0.7rem;
-    color: white;
 }
 
-.boton_success {
-    @extend .boton_default ;
-    background-color: rgb(4, 212, 4)
-}
-
-.boton_alerta {
-    @extend .boton_default ;
-    background-color: #FF8516;
-}
-
-.boton_cancelar {
-    @extend .boton_default ;
-    background-color: #D61E20;
+footer{
+    background-color:rgb(247, 204, 247);
 }
 
 @media (max-width:768px) {
@@ -179,4 +156,13 @@ h1{
     .kits_tutoriales{font-size: 1.4rem};
     .kits_p{font-size: 0.9rem;}
 }
+@media (max-width:576px) {
+    .card-text{font-size: 0.7rem;}
+    h1{font-size: 1.1rem,}
+    .span_ofertas{font-size: 0.9rem;}
+    .cursos_p{font-size: 1rem;}
+}
 
+@media (max-width:576px) {
+    .card-title{font-size: 1rem;}
+}

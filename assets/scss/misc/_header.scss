@@ -1,5 +1,6 @@
 header { 
     background-color: map-get($colores, primary);
+    width: 100%;
 }
 
 #logo{
@@ -15,6 +16,6 @@ header {
     font-size: 1.5rem;
 }
 
-.nav-link:hover{
-    color:violet
+.navbar-nav .nav-item .nav-link:hover{
+    color: violet;
 }
